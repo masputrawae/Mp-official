@@ -16,7 +16,7 @@ Selamat datang di halaman menu! Di sini Anda dapat menemukan semua artikel yang 
       <ul>
         {% for post in category[1] %}
           <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
           </li>
         {% endfor %}
       </ul>
@@ -29,7 +29,7 @@ Selamat datang di halaman menu! Di sini Anda dapat menemukan semua artikel yang 
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
