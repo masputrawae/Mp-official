@@ -1,7 +1,7 @@
 title: My Website
 description: "Website untuk berbagi artikel dan pemikiran."
 author: "Putra Jaya"
-url: "https://masputrawae.github.io" # Ganti dengan URL GitHub Pages kamu
+url: "https://masputrawae.github.io/Mp-official/" # Ganti dengan URL GitHub Pages kamu
 baseurl: "" # Ganti jika menggunakan subfolder
 markdown: kramdown
 permalink: pretty
