@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pembahasan tentang cara Setup git di linux sampai bisa push ke github">
+    <meta name="keywords" content="Jekyll, blog, tutorial, programming, teknologi">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Setup Git Dan Github Lengkap</title>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="post-card">
+    <h1>Setup Git Dan Github Lengkap</h1>
+    <p class="post-meta">
+        October 20, 2024
+    </p>
+    <h1 id="️-setup-git-dan-github-lengkap">✍️ Setup Git Dan Github Lengkap</h1>
+<p>Pada Tanggal: Minggu, 20 Oktober 2024 pukul 13.15, saat hujan dan entah kenapa kepikiran untuk menulis ini, ya walaupun tidak niat tetapi aku tetap berusaha untuk menuliskan catatan berharga ini.</p>
+
+<h2 id="️-persiapan">⚙️ Persiapan</h2>
+<ul>
+  <li>Doa sebelum memulai</li>
+  <li>Desktop (Aku pakai Ubuntu)</li>
+  <li>Terminal (bukan terminal bus ya!!)</li>
+  <li>Tekat yang kuat dan iman yang tebal</li>
+</ul>
+
+<h2 id="️-langkah-demi-langkah">⚒️ Langkah demi langkah</h2>
+
+<h3 id="-instalasi-git-dan-configuration">💿 Instalasi Git dan Configuration</h3>
+
+<ul>
+  <li>Buka Terminal
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>git
+</code></pre></div>    </div>
+  </li>
+  <li>Memastikan Instalasi
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nt">--version</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Setting Setelah Install Git
+  Setelah Git terinstall, set identitas Git (nama dan email) biar kalau commit, identitas terdaftar:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.name <span class="s2">"Nama Kamu"</span>
+git config <span class="nt">--global</span> user.email <span class="s2">"email@kamu.com"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Membuat Repositori Lokal
+  Berhubungan saya sedang belajar python, saya membuat dengan nama “program-python-sederhana” Dan kedepannya akan saya gunakan untuk menyimpan hasil praktik python saya.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>program-python-sederhana
+<span class="nb">cd </span>program-python-sederhana
+<span class="nb">touch </span>README.md
+git init
+</code></pre></div>    </div>
+    <blockquote>
+      <p>Perintah <code class="language-plaintext highlighter-rouge">git init</code> akan mengubah folder tersebut menjadi repository Git. Semua perubahan yang kamu buat pada file di dalam folder itu akan dilacak oleh Git.</p>
+    </blockquote>
+  </li>
+  <li>Menulis isi file README.md
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano README.md
+</code></pre></div>    </div>
+    <blockquote>
+      <p>Simpan dengan menekan CTRL+ALT+O, lalu ENTER, kemudian CTRL+X</p>
+    </blockquote>
+  </li>
+  <li>Periksa status file kamu:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git status
+</code></pre></div>    </div>
+    <blockquote>
+      <p>File baru akan muncul sebagai “untracked” (belum dilacak).</p>
+    </blockquote>
+  </li>
+  <li><strong>Stage file</strong> berarti menyiapkan file untuk di-commit
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add README.md
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Commit file</strong> yang sudah di-stage:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"Commit pertama: Tambah README.md"</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="-setting-ssh-untuk-github">🔓 Setting SSH untuk GitHub</h4>
+
+<ul>
+  <li>Cek SSH Key
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> <span class="nt">-al</span> ~/.ssh
+</code></pre></div>    </div>
+  </li>
+  <li>Generate SSH Key
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"email@kamu.com"</span>
+</code></pre></div>    </div>
+    <ul>
+      <li>Gantilah <code class="language-plaintext highlighter-rouge">email@kamu.com</code> dengan email GitHub kamu.</li>
+      <li>Tekan <strong>Enter</strong> untuk menggunakan lokasi penyimpanan default.</li>
+      <li>Tambahkan passphrase jika ingin, atau tekan <strong>Enter</strong> jika tidak.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="-tambah-ssh-key-ke-ssh-agent">🔑 <strong>Tambah SSH Key ke SSH Agent</strong></h4>
+
+<ul>
+  <li>Mulai SSH agent:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>ssh-agent <span class="nt">-s</span><span class="si">)</span><span class="s2">"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Tambahkan SSH key ke agent:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add ~/.ssh/id_rsa
+</code></pre></div>    </div>
+  </li>
+  <li>Tambahkan SSH Key ke GitHub</li>
+  <li>Salin SSH public key:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cat</span> ~/.ssh/id_rsa.pub
+</code></pre></div>    </div>
+  </li>
+  <li>Salin seluruh isi dari output perintah.</li>
+  <li>Login ke GitHub, buka <strong>Settings</strong>:
+    <ul>
+      <li>Di sidebar kiri, pilih <strong>SSH and GPG keys</strong>.</li>
+      <li>Klik tombol <strong>New SSH key</strong>.</li>
+      <li>Beri nama key dan <strong>paste</strong> public key yang sudah kamu salin.</li>
+      <li>Klik <strong>Add SSH key</strong>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="-buat-repository-di-github">🐈 Buat Repository di GitHub</h4>
+
+<ul>
+  <li>Login ke akun GitHub kamu.</li>
+  <li>Klik tombol <strong>New</strong> untuk membuat repository baru.</li>
+  <li>Beri nama repository dan klik <strong>Create repository</strong>
+  GitHub akan kasih instruksi buat koneksi repository lokal kamu dengan GitHub.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin git@github.com:username/nama-repo.git
+git branch <span class="nt">-M</span> main
+git push <span class="nt">-u</span> origin main
+</code></pre></div>    </div>
+    <blockquote>
+      <p>Untuk nama branch tidak selalu “main” bisa juga “master” atau bisa kamu beri nama sesuai selera, tapi untuk mempermudah gunakan “main” atau “master”</p>
+    </blockquote>
+  </li>
+  <li>Masukkan perintah tadi ke terminal, setelah selesai Periksa remote:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote <span class="nt">-v</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Uji koneksi SSH ke GitHub:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh <span class="nt">-T</span> git@github.com
+</code></pre></div>    </div>
+  </li>
+  <li>Jika berhasil, kamu akan melihat pesan:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="️-push-ke-repository">☝️ <strong>Push ke Repository</strong></h4>
+
+<p>Sekarang kamu bisa melakukan push ke repository GitHub:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push <span class="nt">-u</span> origin main
+</code></pre></div></div>
+<h2 id="-hasil">📃 Hasil</h2>
+<p>Dari hal yang sudah saya lakukan di atas, semuanya berhasil, kecuali ketikan menggunakan:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin http
+</code></pre></div></div>
+<p>Ini tidak bisa, jadi pastikan mengambil yang ssh</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin git@github:
+</code></pre></div></div>
+<h3 id="related">Related</h3>
+<ul>
+  <li>[Masih Kosong]</li>
+</ul>
+
+</article>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Website</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" class="btn">Facebook</a>
+            <a href="https://twitter.com" class="btn">Twitter</a>
+            <a href="https://instagram.com" class="btn">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

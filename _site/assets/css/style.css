@@ -1,0 +1,186 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Font Kustom */
+    line-height: 1.6;
+    background-color: #121212; /* Warna gelap untuk mode gelap */
+    color: #ffffff; /* Teks putih */
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #000000, #333333); /* Gradasi hitam */
+    color: #FFD700; /* Warna emas */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Bayangan untuk efek premium */
+}
+
+/* Navigation */
+nav a {
+    color: #FFD700; /* Warna emas untuk tautan */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Transisi halus */
+}
+
+nav a:hover {
+    color: #ffffff; /* Teks putih saat hover */
+    transform: scale(1.1); /* Efek pembesaran */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #FFD700; /* Warna emas untuk heading */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Efek bayangan pada teks */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333333; /* Warna latar belakang footer */
+    color: #c0c0c0; /* Warna silver untuk teks footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Card Style for Posts */
+.post-card {
+    background-color: #1e1e1e; /* Background gelap untuk artikel */
+    border: 1px solid #444; /* Garis batas abu-abu */
+    border-radius: 8px; /* Sudut membulat */
+    margin: 20px 0;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+    transform: scale(1.02); /* Efek pembesaran saat hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Bayangan saat hover */
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Warna emas untuk tombol */
+    color: #000; /* Teks hitam */
+    border-radius: 5px; /* Sudut membulat */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff; /* Ganti ke putih saat hover */
+    color: #FFD700; /* Teks emas saat hover */
+}
+
+/* List Styling (Bullet Points and Ordered Lists) */
+ul, ol {
+    margin-left: 20px; /* Memberi jarak indentasi pada list */
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    line-height: 1.8; /* Jarak antar item list */
+    margin-bottom: 10px; /* Memberi jarak antar bullet point */
+}
+
+ul {
+    list-style-type: disc; /* Tipe bullet default */
+}
+
+ol {
+    list-style-type: decimal; /* Tipe list berurutan (angka) */
+}
+
+/* Blockquote Styling */
+blockquote {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: #1e1e1e; /* Background gelap */
+    border-left: 5px solid #FFD700; /* Garis vertikal warna emas di sebelah kiri */
+    color: #c0c0c0; /* Warna teks untuk blockquote */
+    font-style: italic; /* Memberi gaya miring pada teks */
+}
+
+/* Code Block Styling for Triple Backticks (```) */
+pre {
+    background-color: #1c1c1c; /* Background gelap untuk blok kode */
+    border-radius: 8px; /* Sudut blok membulat */
+    padding: 15px; /* Spasi dalam blok kode */
+    color: #FFD700; /* Warna teks kode (emas) */
+    font-family: "Courier New", Courier, monospace; /* Font monospace untuk kode */
+    font-size: 0.95rem; /* Ukuran font lebih kecil untuk kode */
+    overflow-x: auto; /* Agar kode panjang bisa di-scroll */
+/*    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Bayangan halus untuk efek premium */
+    border: 1px solid #444; /* Garis abu-abu di sekeliling blok kode */
+}
+
+/* Inline Code Styling */
+code {
+/*    background-color: #2d2d2d; /* Background gelap untuk kode */
+    padding: 3px 6px;
+    border-radius: 4px; /* Sudut inline code membulat */
+    font-family: "Courier New", Courier, monospace; /* Font monospace */
+    color: #FFD700; /* Warna teks kode */
+    font-size: 0.9rem; /* Ukuran font inline code sedikit lebih kecil */
+/*    border: 1px solid #444; /* Garis abu-abu di sekeliling inline code */
+}
+
+/* Heading Styling */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    color: #FFD700; /* Warna emas untuk heading */
+}
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 20px; /* Jarak antar paragraf */
+    line-height: 1.8; /* Jarak antar baris teks */
+    color: #c0c0c0; /* Warna teks paragraf */
+}
+
+/* Link Styling */
+a {
+    color: #FFD700; /* Warna link emas */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff; /* Teks putih saat hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav a {
+        display: block; /* Tautan jadi baris */
+        margin: 10px 0; /* Margin di atas dan bawah */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px; /* Sesuaikan padding header */
+    }
+    
+    .post-card {
+        padding: 10px; /* Sesuaikan padding artikel */
+    }
+
+    nav a {
+        margin: 0 10px; /* Margin lebih kecil di seluler */
+    }
+}

@@ -1,0 +1,47 @@
+I"�<h1 id="️-python-membuat-kalkulator-sederhana">✍️ Python: Membuat Kalkulator Sederhana</h1>
+<p>Pada Tanggal: Minggu, 20 Oktober 2024 pukul 15.10, aku sedang belajar python dan membuat sebuah program kalkulator sederhana, ini adalah kodenya, siapa tahu ada yang sedang mencari contekan ☝️</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s">'''
+[;;]===================[;;]
+[1] Penjumlahan
+[2] Pengurangan
+[3] Perkalian
+[4] Pembagian
+[;;]===================[;;]
+---------------------------
+Masukkan 1/2/3/4 : '''</span><span class="p">))</span>
+<span class="c1"># Penjumlahan
+</span>    <span class="k">if</span> <span class="n">user</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Masukkan Angka Pertama : "</span><span class="p">))</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Masukkan Angka Kedua   : "</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"===================================="</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Hasil Dari"</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s">"+"</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="s">"="</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+<span class="c1"># Pengurangan
+</span>    <span class="k">elif</span> <span class="n">user</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Masukkan Angka Pertama : "</span><span class="p">))</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Masukkan Angka Kedua   : "</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"===================================="</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Hasil Dari"</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s">"-"</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="s">"="</span><span class="p">,</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
+<span class="c1"># Perkalian
+</span>    <span class="k">elif</span> <span class="n">user</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Masukkan Angka Pertama : "</span><span class="p">))</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Masukkan Angka Kedua   : "</span><span class="p">))</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"===================================="</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Hasil dari"</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="s">"="</span><span class="p">,</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>
+<span class="c1"># Pembagian
+</span>    <span class="k">elif</span> <span class="n">user</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Masukkan Angka Pertama : "</span><span class="p">))</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Masukkan Angka Kedua   : "</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Error: Tidak Bisa Dibagi Dengan Nol!"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"===================================="</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Hasil dari"</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s">"/"</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="s">"="</span><span class="p">,</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>
+<span class="c1"># Melanjutkan Program atau Tidak
+</span>    <span class="n">lanjut</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Apakah kamu mau mencoba lagi? (y/n): "</span><span class="p">).</span><span class="n">lower</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">lanjut</span> <span class="o">!=</span> <span class="s">'y'</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Terima kasih sudah menggunakan program ini! Sampai jumpa!"</span><span class="p">)</span>
+        <span class="k">break</span>
+</code></pre></div></div>
+:ET
