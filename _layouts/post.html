@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="post-card">
     <h1>{{ page.title }}</h1>
     <p class="post-meta">
@@ -8,3 +9,15 @@ layout: default
     </p>
     {{ content }}
 </article>
+
+<h3>Artikel Terkait</h3>
+<ul>
+  {% assign related_posts = site.posts | where: "tags", page.tags %}
+  {% for related_post in related_posts %}
+    {% if related_post.title != page.title %}
+      <li>
+        <a href="{{ related_post.url | relative_url }}">{{ related_post.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
