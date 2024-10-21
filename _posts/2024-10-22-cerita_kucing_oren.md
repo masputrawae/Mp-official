@@ -9,7 +9,7 @@ tags:
   - komedi
   - lucu
   - kocak
-  - cerita-kucing
+  - cerita_kucing
 ---
 **Petualangan Si Kucing yang Mau Jadi Superhero Tapi Takut Air**
 

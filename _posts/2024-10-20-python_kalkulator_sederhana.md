@@ -6,10 +6,10 @@ categories: Python
 tags:
   - python
   - programing
-  - kalkulator-sederhana
+  - kalkulator_sederhana
   - basic
-  - basic-pyton
-  - belajar-python
+  - basic_pyton
+  - belajar_python
 ---
 # ✍️ Python: Membuat Kalkulator Sederhana
 Pada Tanggal: Minggu, 20 Oktober 2024 pukul 15.10, aku sedang belajar python dan membuat sebuah program kalkulator sederhana, ini adalah kodenya, siapa tahu ada yang sedang mencari contekan ☝️

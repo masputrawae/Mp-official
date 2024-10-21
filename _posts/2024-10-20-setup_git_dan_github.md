@@ -2,11 +2,12 @@
 layout: post
 title: Setup Git dan Github Lengkap
 date: 2024-10-21
-categories: git
+categories:
+  - Git
 tags:
   - git
   - github
-  - version-control
+  - version_control
   - projects
   - push
   - pull
