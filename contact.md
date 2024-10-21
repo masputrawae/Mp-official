@@ -21,4 +21,4 @@ Jika Anda ingin menghubungi saya, silakan isi formulir di bawah ini:
     <button type="submit">Kirim</button>
 </form>
 
-<p>Atau, Anda bisa menghubungi saya melalui email di <a href="mailto:putrajaya@example.com">putrajaya@example.com</a>.</p>
+<p>Atau, Anda bisa menghubungi saya melalui email di <a href="mailto: masputrawae.official@gmail.com">masputrawae.official@gmail.com</a>.</p>
