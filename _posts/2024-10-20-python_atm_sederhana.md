@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python: Kalkulator Sederhana"
+title: "Python: ATM Sederhana"
 date: 2024-10-21
 categories:
   - Python
@@ -12,7 +12,7 @@ tags:
   - belajar_python
   - atm_sederhana
 ---
-# ✍️ Python: Membuat Kalkulator Sederhana
+# ✍️ Python: Membuat ATM Sederhana
 Pada Tanggal: Minggu, 19 Oktober 2024 pukul 20.10, aku sedang belajar python dan membuat sebuah program atm sederhana, ini adalah kodenya, siapa tahu ada yang sedang mencari contekan ☝️
 
 ```python
