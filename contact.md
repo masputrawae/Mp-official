@@ -8,7 +8,7 @@ description: "Halaman untuk menghubungi saya."
 
 Jika Anda ingin menghubungi saya, silakan isi formulir di bawah ini:
 
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form action="https://formspree.io/f/xanynnvg" method="POST">
     <label for="name">Nama:</label><br>
     <input type="text" id="name" name="name" required><br>
     
