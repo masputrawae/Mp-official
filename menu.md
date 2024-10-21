@@ -11,7 +11,7 @@ Selamat datang di halaman menu! Di sini Anda dapat menemukan semua artikel yang 
 # Artikel Terbaru
 
 <div class="grid-container">
-  {% for post in site.posts %}
+  {% for post in site.posts | limit: 3 %}
     <div class="card">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p>{{ post.excerpt }}</p>
