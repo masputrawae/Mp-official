@@ -13,7 +13,6 @@ title: Home
     </div>
   {% endfor %}
 </div>
-
 <style>
   .grid-container {
     display: grid;
