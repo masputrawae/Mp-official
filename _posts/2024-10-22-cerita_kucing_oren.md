@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Petualangan Si Kucing yang Mau Jadi Superhero Tapi Takut Air
+title: Petualangan Si Kucing Oren
 date: 2024-10-21
 categories: Fiction
 tags:
@@ -36,13 +36,3 @@ Sementara itu, *Oyenman* sudah aman berteduh di bawah pohon. Dia menyadari kalau
 Dan begitulah, *Oyenman* menjadi pahlawan kampung, kucing yang mengalahkan anjing besar, padahal musuh terbesarnya adalah... setetes air hujan.
 
 **Tamat.**
-
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-

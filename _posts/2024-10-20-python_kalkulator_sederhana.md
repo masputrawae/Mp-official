@@ -1,9 +1,15 @@
 ---
 layout: post
-title: 
-date: ""
-categories: 
+title: "Python: Kalkulator Sederhana"
+date: 2024-10-21
+categories: Python
 tags:
+  - python
+  - programing
+  - kalkulator-sederhana
+  - basic
+  - basic-pyton
+  - belajar-python
 ---
 # ✍️ Python: Membuat Kalkulator Sederhana
 Pada Tanggal: Minggu, 20 Oktober 2024 pukul 15.10, aku sedang belajar python dan membuat sebuah program kalkulator sederhana, ini adalah kodenya, siapa tahu ada yang sedang mencari contekan ☝️
@@ -54,11 +60,3 @@ Masukkan 1/2/3/4 : '''))
 ```
 ---
 
-# 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>

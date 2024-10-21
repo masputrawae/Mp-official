@@ -1,8 +1,17 @@
 ---
 layout: post
-title: Setup Git Dan Github Lengkap
-date: 2024-10-20
-description: Pembahasan tentang cara Setup git di linux sampai bisa push ke github
+title: Setup Git dan Github Lengkap
+date: 2024-10-21
+categories: git
+tags:
+  - git
+  - github
+  - version-control
+  - projects
+  - push
+  - pull
+  - programming
+  - development
 ---
 # ✍️ Setup Git Dan Github Lengkap 
 Pada Tanggal: Minggu, 20 Oktober 2024 pukul 13.15, saat hujan dan entah kenapa kepikiran untuk menulis ini, ya walaupun tidak niat tetapi aku tetap berusaha untuk menuliskan catatan berharga ini. 
@@ -136,5 +145,3 @@ Ini tidak bisa, jadi pastikan mengambil yang ssh
 ```bash
 git remote add origin git@github:
 ```
-### Related
-- [Masih Kosong]
