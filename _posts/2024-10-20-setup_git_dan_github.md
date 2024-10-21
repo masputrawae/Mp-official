@@ -3,7 +3,7 @@ layout: post
 title: Setup Git dan Github Lengkap
 date: 2024-10-21
 categories:
-  - Git
+  - Software Development
 tags:
   - git
   - github

@@ -9,10 +9,9 @@ layout: default
     </p>
     {{ content }}
 </article>
-
 <h3>Artikel Terkait</h3>
 <ul>
-  {% assign related_posts = site.posts | where: "tags", page.tags %}
+  {% assign related_posts = site.posts | where: "categories", page.categories %}
   {% for related_post in related_posts %}
     {% if related_post.title != page.title %}
       <li>
