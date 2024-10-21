@@ -23,7 +23,7 @@ title: Home
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #E5000000;
   }
   .card h3 {
     margin-top: 0;
@@ -59,13 +59,3 @@ Selamat menikmati perjalanan intelektual yang campur aduk ini! 🌪️ Jangan lu
 
 Cheers,  
 **Admin Super Jenius yang Merendah** 🤓 
-
-## Artikel Terbaru
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
