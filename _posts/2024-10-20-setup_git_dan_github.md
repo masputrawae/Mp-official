@@ -14,18 +14,18 @@ tags:
   - programming
   - development
 ---
-# ✍️ Setup Git Dan Github Lengkap 
+# Setup Git Dan Github Lengkap 
 Pada Tanggal: Minggu, 20 Oktober 2024 pukul 13.15, saat hujan dan entah kenapa kepikiran untuk menulis ini, ya walaupun tidak niat tetapi aku tetap berusaha untuk menuliskan catatan berharga ini. 
 
-## ⚙️ Persiapan
+## Persiapan
 - Doa sebelum memulai
 - Desktop (Aku pakai Ubuntu)
 - Terminal (bukan terminal bus ya!!)
 - Tekat yang kuat dan iman yang tebal
 
-## ⚒️ Langkah demi langkah
+## Langkah demi langkah
 
-### 💿 Instalasi Git dan Configuration 
+### Instalasi Git dan Configuration 
 
 - Buka Terminal
 ```bash
@@ -70,7 +70,7 @@ git add README.md
 git commit -m "Commit pertama: Tambah README.md"
 ```
 
-#### 🔓 Setting SSH untuk GitHub
+#### Setting SSH untuk GitHub
 
 - Cek SSH Key
 ```bash
@@ -84,7 +84,7 @@ ssh-keygen -t rsa -b 4096 -C "email@kamu.com"
   - Tekan **Enter** untuk menggunakan lokasi penyimpanan default.
   - Tambahkan passphrase jika ingin, atau tekan **Enter** jika tidak.
 
-#### 🔑 **Tambah SSH Key ke SSH Agent**
+#### **Tambah SSH Key ke SSH Agent**
 
 - Mulai SSH agent:
 ```bash
@@ -106,7 +106,7 @@ ssh-add ~/.ssh/id_rsa
 	- Beri nama key dan **paste** public key yang sudah kamu salin.
 	- Klik **Add SSH key**.
 
-#### 🐈 Buat Repository di GitHub
+#### Buat Repository di GitHub
 
 - Login ke akun GitHub kamu.
 - Klik tombol **New** untuk membuat repository baru.
@@ -131,13 +131,13 @@ ssh -T git@github.com
 Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-#### ☝️ **Push ke Repository**
+#### **Push ke Repository**
 
 Sekarang kamu bisa melakukan push ke repository GitHub:
 ```bash
 git push -u origin main
 ```
-## 📃 Hasil 
+## Hasil 
 Dari hal yang sudah saya lakukan di atas, semuanya berhasil, kecuali ketikan menggunakan:
 ```bash
 git remote add origin http
